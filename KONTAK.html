@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak — Syakilatul Mujahidah</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome untuk ikon -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg: #f4f7fc;
+      --text: #2a2e37;
+      --brand: #0d2b55;
+      --brand-2: #133b73;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --ring: #e5e7eb;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text)
+    }
+
+    a { color: inherit; text-decoration: none }
+
+    .header {
+      background: var(--brand);
+      color: #fff;
+      text-align: center;
+      padding: 46px 20px
+    }
+
+    .nav {
+      background: var(--brand-2);
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 12px
+    }
+
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 10px 14px;
+      border-radius: 12px
+    }
+
+    .nav a:hover { background: rgba(255, 255, 255, .14) }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 34px 20px
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--ring);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 14px 0;
+      box-shadow: 0 8px 20px rgba(13, 43, 85, .06)
+    }
+
+    .list { padding-left: 18px; margin: 10px 0 }
+
+    .lead {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #1f2937
+    }
+
+    .footer {
+      background: var(--brand);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px
+    }
+
+    /* Floating Contact Buttons */
+    .floating-contact {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 1000;
+    }
+
+    .floating-contact a {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 24px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    .floating-contact a:hover {
+      transform: scale(1.1);
+      opacity: 0.9;
+    }
+
+    /* Warna khusus tiap ikon */
+    .wa { background: #25D366; }
+    .ig { background: #E1306C; }
+    .mail { background: #0d2b55; }
+    .maps { background: #FF5733; } /* warna oranye untuk maps */
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Kontak</h1>
+    <p>Terbuka untuk kolaborasi, belajar bareng, atau diskusi ringan soal web</p>
+  </header>
+
+  <nav class="nav">
+    <a href="INDEX.html">BERANDA</a>
+    <a href="tentang.html">PROFIL</a>
+    <a href="RESUME.html">RESUME</a>
+    <a href="PORTFOLIO.html">PORTFOLIO</a>
+    <a href="KONTAK.html">KONTAK</a>
+  </nav>
+
+  <main class="container">
+    <div class="card">
+      <ul class="list">
+        <li>Email: <a href="mailto:Syakila.da27@gmail.com">Syakila.da27@gmail.com</a></li>
+        <li>Telepon/WA: +62 831 9369 0292</li>
+        <li>IG: <a href="https://instagram.com/syyakilll" target="_blank">@syyakilll</a></li>
+        <li>Alamat: <a href="https://www.google.com/maps?q=Jl.+Antasari+No.2" target="_blank">Jl. Antasari No.2</a></li>
+      </ul>
+      <p class="lead">
+        Saya senang mengerjakan tugas-tugas yang jelas, terukur, dan berdampak. Jika kamu memiliki ide halaman
+        sederhana—seperti landing page, profil usaha, atau halaman event—saya siap membantu menyusunnya dari
+        konsep hingga tayang di web. Mari terhubung!
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">© 2025 Syakilatul Mujahidah</footer>
+
+  <!-- Floating Contact Buttons -->
+  <div class="floating-contact">
+    <a href="mailto:Syakila.da27@gmail.com" class="mail" title="Email">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+    <a href="https://wa.me/6283193690292" target="_blank" class="wa" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://instagram.com/syyakilll" target="_blank" class="ig" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.google.com/maps?q=Jl.+Antasari+No.2" target="_blank" class="maps" title="Lokasi Maps">
+      <i class="fa-solid fa-map-marker-alt"></i>
+    </a>
+  </div>
+</body>
+</html>
